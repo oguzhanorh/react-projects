@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import data from './data';
 import Article from './Article';
+import { MdDarkMode } from 'react-icons/md';
 
 const getStorageTheme = () => {
   let theme = 'light-theme';
@@ -32,7 +33,7 @@ function App() {
         <div className="nav-center">
           <h2>DARK MODE AND LIGHT MODE PROJECT</h2>
           <button className="btn" onClick={toggleTheme}>
-            Dark-Light
+            <MdDarkMode />
           </button>
         </div>
       </nav>
